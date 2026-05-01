@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pejabat Digital - Hardiknas</title>
+    <script src="https://tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        .bg-komdigi { background-color: #005596; }
+        .text-komdigi { color: #005596; }
+        .border-komdigi { border-color: #005596; }
+        .pattern-bg {
+            background-color: #f8fafc;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://w3.org fill='none' fill-rule='evenodd'%3E%3Cg fill='%23005596' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2v-4h4v-2H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="pattern-bg min-h-screen font-sans">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-md border-b-4 border-blue-600 p-4">
+        <div class="max-w-4xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <!-- Placeholder Logo Komdigi -->
+                <div class="bg-komdigi p-2 rounded text-white font-bold text-xs">KOMDIGI</div>
+                <h1 class="text-sm md:text-lg font-bold text-gray-800 leading-tight">
+                    Kementerian Komunikasi <br class="md:hidden"> dan Digital RI
+                </h1>
+            </div>
+            <div class="hidden md:block text-right">
+                <p class="text-xs text-gray-500 italic">Mewujudkan Indonesia Digital</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-2xl mx-auto mt-8 p-6 bg-white shadow-2xl rounded-xl border border-gray-100">
+        
+        <!-- Info Simulasi Banner -->
+        <div class="bg-yellow-100 border-l-4 border-yellow-500 p-3 mb-6">
+            <p class="text-xs text-yellow-800 font-semibold">
+                ⚠️ [SIMULASI CITA-CITA] Halaman ini dibuat untuk merayakan Hari Pendidikan Nasional (Hardiknas).
+            </p>
+        </div>
+
+        <!-- Profile Section -->
+        <div class="text-center">
+            <div class="relative inline-block">
+                <img id="profile-img" src="https://placeholder.com" alt="Foto Profil" class="w-32 h-32 rounded-full border-4 border-komdigi shadow-lg mx-auto object-cover">
+                <div class="absolute bottom-0 right-2 bg-blue-500 text-white p-2 rounded-full text-xs shadow-md">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+            </div>
+            
+            <h2 class="mt-4 text-2xl font-bold text-gray-800 uppercase tracking-wide">[NAMA LENGKAP KAMU]</h2>
+            <p class="text-komdigi font-bold uppercase tracking-widest text-sm">Sekretaris Jenderal</p>
+            <p class="text-gray-500 text-sm italic">NIP. 19950101 202405 1 001 (Simulasi)</p>
+        </div>
+
+        <!-- Bio / Coding Skill -->
+        <div class="mt-8 space-y-4">
+            <div class="border-t border-gray-100 pt-4">
+                <h3 class="font-bold text-gray-700 flex items-center mb-2">
+                    <i class="fas fa-user-tie mr-2 text-komdigi"></i> Profil Profesional
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Bertanggung jawab dalam koordinasi pelaksanaan tugas, pembinaan, dan pemberian dukungan administrasi kepada seluruh unit organisasi di lingkungan Kementerian Komunikasi dan Digital. Fokus pada akselerasi transformasi digital nasional.
+                </p>
+            </div>
+
+            <div class="border-t border-gray-100 pt-4">
+                <h3 class="font-bold text-gray-700 flex items-center mb-2">
+                    <i class="fas fa-code mr-2 text-komdigi"></i> Kompetensi Teknis (Developer)
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-semibold border border-blue-200">HTML/CSS</span>
+                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-semibold border border-blue-200">Tailwind CSS</span>
+                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-semibold border border-blue-200">JavaScript</span>
+                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-semibold border border-blue-200">UI/UX Design</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Button -->
+        <div class="mt-10">
+            <button onclick="saluranAduan()" class="w-full bg-komdigi hover:bg-blue-800 text-white font-bold py-3 rounded-lg transition-all shadow-md transform active:scale-95">
+                VERIFIKASI STATUS PEGAWAI
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center mt-12 pb-8">
+        <p class="text-gray-400 text-xs">© 2024 Kementerian Komunikasi dan Digital RI</p>
+        <p class="text-gray-400 text-[10px] mt-1 italic">Proyek Iseng Hardiknas - "Pimpin Pemulihan, Bergerak untuk Merdeka Belajar"</p>
+    </footer>
+
+    <script>
+        function saluranAduan() {
+            alert("Status: PEGAWAI AKTIF\nJabatan: Sekretaris Jenderal\n\nSelamat Hari Pendidikan Nasional! Teruslah berkarya untuk kedaulatan digital Indonesia.");
+        }
+        
+        // Logika sederhana untuk menyapa di console
+        console.log("Web Profil Cita-cita Komdigi Berhasil Dimuat!");
+    </script>
+</body>
+</html>
